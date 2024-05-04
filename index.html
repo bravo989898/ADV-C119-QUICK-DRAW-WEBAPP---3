@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Quick draw</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria Hallelujah">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy Monkey">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+        
+</head>
+<body background="bg.jpg" style="background-size: cover;">
+
+        <center>
+            <!--modal(sketch)-->
+            <div id="myModal" class="modal fade">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sketches</h4>
+                  </div>
+          
+                  <div class="modal-body">
+          
+                    <img src="sketch1.png">
+                    <img src="sketch2.png">
+          
+                  </div>
+          
+                </div>
+          
+              </div>
+              <!--modal-->
+
+               <!--modal(about)-->
+            <div id="aboutModal" class="modal fade">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">About This Game</h4>
+                </div>
+                <br>
+                <br>
+                <div class="modal-body">
+                  <p>HOW TO PLAY : <br> In this, as the name suggests You have to quickly draw. That means, you will be given an random object which you have to draw on the canvas but the twist is that you have a time limit, a time limit of 5 seconds, within this time limit the computer has to guess the object which you are drawing.If the computer guesses it then you get a point but if the computer doesn't then you don't gain any point</p>
+                  <br>
+        
+                  <p>ABOUT : <br> This is a game built with machine learning. You draw, and a neural network tries to guess what you’re drawing. Of course, it doesn’t always work. But the more you play with it, the more it will learn. So far it has beem trained on a few hundred concepts, and it would add more over time. This is an example of how you can use machine learning in fun ways.</p>
+                  <br>
+                  <img src="ml.jpg">
+                  <br>
+                  <div class="attribution">
+                    Coded and designed by <a href="https://github.com/bravo989898">Aditya Mishra</a>.
+                  </div>
+        
+                </div>
+        
+              </div>
+        
+            </div>
+            <!--modal-->
+
+
+            <h1><button id="about" class="btn" data-toggle="modal" data-target="#aboutModal">?</button>
+                Quick! Draw 	&#128396;
+                <button  id="sketch" class="btn" data-toggle="modal" data-target="#myModal">Show sketch</button>
+            </h1>
+          </center>
+            <div class="container">
+              
+                    <div class="stats">
+                      <center>
+                        <p id="label">Label: </p>
+                        <p id="confidence" >Confidence: </p>
+                        <label id="score" class="ch_value">Score:</label>
+                        <button id="clear" class="btn btn-danger btn-lg" onclick="clearCanvas()">Clear canvas</button>
+                        <label id="timer" class="ch_value">Timer:</label>
+                        <br>
+                        <label id="object">Sketch To Be Drawn:</label>
+                        <br>
+                      </center>
+                    </div>
+
+                    <img class="hand" src="hand.png">
+            </div>
+
+       
+    
+    <script src="main.js"></script>
+</body>
+</html>

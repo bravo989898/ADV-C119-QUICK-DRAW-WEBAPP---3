@@ -1,0 +1,154 @@
+#sketch{
+  float: right;
+  margin-right: 15px;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#sketch:hover{
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+#sketch:active{
+    background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+#about{
+    float: left;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: lightskyblue;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+#about:hover{
+    background-color: #fff;
+    color: blue;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 0px blue;
+  }
+  
+#about:active{
+    background-color: blue;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+
+h1>img{
+    margin-right: 400px;
+
+}
+h1{
+    padding: 5px;
+    font-family: "Gloria Hallelujah", sans-serif;
+    color: black;
+    background-color: yellow;
+    padding-left: 100px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.hand{
+    margin-left: 856px;
+    margin-top: -550px;
+}
+
+.stats{
+    color: white;
+    padding-top: 20px;
+    height: 530px;
+    width: 550px;
+    margin-left: 200px;
+    font-family: "Gloria Hallelujah", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    border-radius: 45px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ch_value{
+    font-size: 20px;
+    color: yellow;
+}
+
+#score{
+    float: left;
+    margin-left: 30px;
+}
+
+#timer
+{
+    float: right;
+    margin-right: 30px;
+}
+
+canvas{
+    border-radius: 20px;
+    margin-top: 15px;
+    animation: change 4s infinite;
+}
+
+@keyframes change{
+    from{box-shadow: 1px 1px 50px grey;}
+    to {box-shadow: 1px 1px 50px white;}
+}
+
+#object{
+    margin-top: 10px;
+    color: red;
+    font-style: italic;
+
+}
+
+p{
+    text-wrap: wrap;
+}
+
+.modal-body{
+    padding-left: 200px;
+    padding-right: 200px
+}
+
+.modal{
+    font-family: "Gloria Hallelujah", fantasy;
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
